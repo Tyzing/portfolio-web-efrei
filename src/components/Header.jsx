@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <div>
+    <div className="h-[56px]">
       <NavBar />
     </div>
   )
