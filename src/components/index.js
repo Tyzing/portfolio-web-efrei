@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Heros from "./Heros";
 import ItemProject from "./ItemProject";
 import ListProject from "./ListProject";
-import NavBar from "./ListProject";
+import NavBar from "./NavBar";
 
 export {
     Header,
