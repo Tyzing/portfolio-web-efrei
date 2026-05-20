@@ -1,4 +1,4 @@
-import About from "./About";
+import Header from "./Header";
 import Button from "./Button";
 import Footer from "./Footer";
 import Heros from "./Heros";
@@ -7,7 +7,7 @@ import ListProject from "./ListProject";
 import NavBar from "./ListProject";
 
 export {
-    About,
+    Header,
     Button,
     Footer,
     Heros,
