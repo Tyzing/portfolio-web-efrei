@@ -1,4 +1,4 @@
-import { Header, Button, Footer, Heros, ItemProject, ListProject, NavBar } from "./components";
+import { Header, Button, Footer, Heros, ItemProject, ListProject, NavBar, TitleSection } from "./components";
 
 const name = "Bastien Dubile";
 
@@ -8,8 +8,8 @@ function App() {
       <div className="mx-[8%]">
         <Header name={name} />
         <Heros name={name} />
+        <ListProject title="Projects"/>
       </div>
-      
     </div>
   );
 }
