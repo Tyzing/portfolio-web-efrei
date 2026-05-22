@@ -1,6 +1,8 @@
-function ListProject() {
+import TitleSection from "./TitleSection"
+function ListProject({ title }) {
   return (
-    <div>
+    <div className="flex flex-col mt-[200px]">
+      <TitleSection title={title} />
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Heros from "./Heros";
 import ItemProject from "./ItemProject";
 import ListProject from "./ListProject";
 import NavBar from "./NavBar";
+import TitleSection from "./TitleSection";
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     Heros,
     ItemProject,
     ListProject,
-    NavBar
+    NavBar,
+    TitleSection
 }
