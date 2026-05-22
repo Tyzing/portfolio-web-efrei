@@ -2,8 +2,12 @@
 
 @theme {
   --color-charcoal: #25282B;
+  --color-yellow: #FDC435;
+  --color-gray: #828282;
   --font-comfortaa: 'Comfortaa', cursive;
   --font-raleway: 'Raleway', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
 }
 
 :root {
@@ -65,14 +69,12 @@ body {
 h1,
 h2 {
   font-family: var(--heading);
-  font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
