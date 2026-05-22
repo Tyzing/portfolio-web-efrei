@@ -1,9 +1,9 @@
 import NavBar from "./NavBar";
 
-function Header() {
+function Header({ name }) {
   return (
     <div className="h-[56px]">
-      <NavBar />
+      <NavBar name={name} />
     </div>
   )
 }
