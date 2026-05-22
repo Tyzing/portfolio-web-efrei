@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <nav className="flex items-center justify-between mx-[8%] py-[12px]">
+    <nav className="flex items-center justify-between py-[12px]">
       <span className="font-comfortaa text-[18px] text-charcoal">
         Bastien Dubile
       </span>

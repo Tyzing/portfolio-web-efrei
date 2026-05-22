@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@fontsource/comfortaa": "^5.2.8",
+    "@fontsource/nunito": "^5.2.7",
+    "@fontsource/poppins": "^5.2.7",
     "@fontsource/raleway": "^5.2.8",
+    "@fontsource/roboto": "^5.2.10",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
