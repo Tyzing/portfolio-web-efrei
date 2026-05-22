@@ -1,11 +1,13 @@
 import { Header, Button, Footer, Heros, ItemProject, ListProject, NavBar } from "./components";
 
+const name = "Bastien Dubile";
+
 function App() {
   return (
     <div className="bg-[url('/image-accueil.webp')] bg-no-repeat bg-right-top bg-auto min-h-screen">
       <div className="mx-[8%]">
-        <Header />
-        <Heros />
+        <Header name={name} />
+        <Heros name={name} />
       </div>
       
     </div>

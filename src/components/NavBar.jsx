@@ -1,8 +1,8 @@
-function NavBar() {
+function NavBar({ name }) {
   return (
     <nav className="flex items-center justify-between py-[12px]">
       <span className="font-comfortaa text-[18px] text-charcoal">
-        Bastien Dubile
+        {name}
       </span>
       <ul className="flex gap-[48px] list-none m-0 p-0">
         <li>
