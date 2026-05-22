@@ -5,6 +5,7 @@ import '@fontsource/raleway'
 import '@fontsource/nunito'
 import '@fontsource/poppins'
 import '@fontsource/roboto'
+import '@fontsource/playfair-display';
 import './index.css'
 import App from './App.jsx'
 
