@@ -4,7 +4,7 @@ import projects from "../data/projects.json"
 
 function ListProject({ title }) {
   return (
-    <div className="flex flex-col mt-[200px] gap-[80px] mx-[8%]">
+    <div id="projects" className="flex flex-col mt-[200px] gap-[80px] mx-[8%]">
       <TitleSection title={title} />
       {projects.map((project, index) => (
         <ItemProject
@@ -14,7 +14,7 @@ function ListProject({ title }) {
           linkProject={project.linkProject}
           imageSrc={project.imageSrc}
           textButton={project.textButton}
-          imageRight={index % 2 !== 0}
+          imageRight={index % 2 == 0}
         />
       ))}
     </div>
