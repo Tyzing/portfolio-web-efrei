@@ -1,0 +1,23 @@
+[
+  {
+    "titleProject": "Portfolio Photographe",
+    "descriptionProject": "J'ai crée ce magnifique portfolio pour ma soeur qui est photographe. J'ai utilisé Nuxt pour le développement et Tailwind pour le design.",
+    "linkProject": "https://www.photographemargaux.fr",
+    "imageSrc": "/imageProjet1.webp",
+    "textButton": "Voir le site"
+  },
+  {
+    "titleProject": "Analyse d'une entreprise",
+    "descriptionProject": "Ce projet a consisté à effectuer en équipe de quatre, un rapport d'analyse pour une entreprise. Plus précisément l'analyse de son environnement pour détecter ses menaces ou opportunités potentielles.",
+    "linkProject": "/Rapport_LaToqueCuivrée.pdf",
+    "imageSrc": "/imageProjet2.webp",
+    "textButton": "Ouvrir le rapport"
+  },
+  {
+    "titleProject": "Portfolio Personnel",
+    "descriptionProject": "Ce projet a consisté à créer mon propre portfolio pour présenter mes compétences et réalisations au BUT. (C'était il y a un moment)",
+    "linkProject": "https://tyzing.github.io/Portfolio/",
+    "imageSrc": "/imageProjet3.webp",
+    "textButton": "Voir le portfolio"
+  }
+]
