@@ -6,15 +6,14 @@ function ItemProject({ titleProject, descriptionProject, linkProject, imageRight
       <h2 className="font-playfair font-bold text-[40px]">{titleProject}</h2>
       <p className="font-nunito text-[18px] text-gray">{descriptionProject}</p>
       <div>
-        <a href={linkProject} target="_blank" rel="noopener noreferrer">
           <Button
             text={textButton}
+            link={linkProject}
             borderColor="var(--color-charcoal)"
             backgroundColor="transparent"
             textColor="var(--color-charcoal)"
             borderRadius="24px"
           />
-        </a>
       </div>
     </div>
   );
