@@ -9,6 +9,7 @@ function App() {
         <Header name={name} />
         <Heros name={name} />
         <ListProject title="Projects"/>
+        <Footer />
       </div>
     </div>
   );
