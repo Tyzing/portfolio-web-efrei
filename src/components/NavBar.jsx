@@ -1,27 +1,46 @@
 import { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 function NavBar({ name }) {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleProjectsClick = (e) => {
+    e.preventDefault();
+    setIsOpen(false);
+    if (location.pathname === "/") {
+      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/", { state: { scrollTo: "projects" } });
+    }
+  };
 
   const links = [
-    { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contacts", label: "Contacts" },
+    { href: "/about", label: "About", isRoute: true },
+    { href: "#projects", label: "Projects", isRoute: false, onClick: handleProjectsClick },
+    { href: "#contacts", label: "Contacts", isRoute: false },
   ];
 
   return (
     <nav className="flex items-center justify-between py-[12px] relative">
-      <span className="font-comfortaa text-[18px] text-charcoal">
+      <Link to="/" className="font-comfortaa text-[18px] text-charcoal no-underline hover:opacity-70 transition-opacity">
         {name}
-      </span>
+      </Link>
 
       {/* Desktop menu */}
       <ul className="hidden md:flex gap-[48px] list-none m-0 p-0">
-        {links.map(({ href, label }) => (
+        {links.map(({ href, label, isRoute, onClick }) => (
           <li key={href}>
-            <a href={href} className="font-raleway text-[18px] text-charcoal no-underline hover:underline">
-              {label}
-            </a>
+            {isRoute ? (
+              <Link to={href} className="font-raleway text-[18px] text-charcoal no-underline hover:underline">
+                {label}
+              </Link>
+            ) : (
+              <a href={href} onClick={onClick} className="font-raleway text-[18px] text-charcoal no-underline hover:underline">
+                {label}
+              </a>
+            )}
           </li>
         ))}
       </ul>
@@ -41,15 +60,25 @@ function NavBar({ name }) {
       {/* Mobile dropdown menu */}
       {isOpen && (
         <ul className="md:hidden absolute top-full left-0 right-0 bg-[#F9FAFF]/95 backdrop-blur-sm list-none m-0 p-0 shadow-md z-50 rounded-b-lg">
-          {links.map(({ href, label }) => (
+          {links.map(({ href, label, isRoute, onClick }) => (
             <li key={href}>
-              <a
-                href={href}
-                onClick={() => setIsOpen(false)}
-                className="block font-raleway text-[18px] text-charcoal no-underline py-[14px] px-[16px] hover:bg-black/5"
-              >
-                {label}
-              </a>
+              {isRoute ? (
+                <Link
+                  to={href}
+                  onClick={() => setIsOpen(false)}
+                  className="block font-raleway text-[18px] text-charcoal no-underline py-[14px] px-[16px] hover:bg-black/5"
+                >
+                  {label}
+                </Link>
+              ) : (
+                <a
+                  href={href}
+                  onClick={onClick ?? (() => setIsOpen(false))}
+                  className="block font-raleway text-[18px] text-charcoal no-underline py-[14px] px-[16px] hover:bg-black/5"
+                >
+                  {label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
