@@ -1,8 +1,11 @@
+import { useState } from "react"
 import TitleSection from "./TitleSection"
 import ItemProject from "./ItemProject"
-import projects from "../data/projects.json"
+import projectsData from "../data/projects.json"
 
 function ListProject({ title }) {
+  const [projects] = useState(projectsData)
+
   return (
     <div id="projects" className="flex flex-col mt-[60px] md:mt-[200px] gap-[40px] md:gap-[80px] md:mx-[8%]">
       <TitleSection title={title} />
