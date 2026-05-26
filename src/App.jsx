@@ -1,17 +1,15 @@
-import { Header, Button, Footer, Heros, ItemProject, ListProject, NavBar, TitleSection } from "./components";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 const name = "Bastien Dubile";
 
 function App() {
   return (
-    <div className="bg-[#F9FAFF] md:bg-[url('/image-accueil.webp')] md:bg-no-repeat md:bg-right-top md:bg-[size:50%_auto] min-h-screen">
-      <Header name={name} />
-      <div className="mx-[8%]">
-        <Heros name={name} />
-        <ListProject title="Projects"/>
-        <Footer />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home name={name} />} />
+      <Route path="/about" element={<About name={name} />} />
+    </Routes>
   );
 }
 
