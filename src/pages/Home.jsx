@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Header, Footer, Heros, ListProject } from "../components";
+import { Header, Footer, Heros, ListProject, Testimonials } from "../components";
 
 function Home({ name }) {
   const location = useLocation();
@@ -19,6 +19,7 @@ function Home({ name }) {
       <div className="mx-[8%]">
         <Heros name={name} />
         <ListProject title="Projects" />
+        <Testimonials title="Testimonials" />
         <Footer />
       </div>
     </div>
