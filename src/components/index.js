@@ -6,6 +6,7 @@ import ItemProject from "./ItemProject";
 import ListProject from "./ListProject";
 import NavBar from "./NavBar";
 import TitleSection from "./TitleSection";
+import Testimonials from "./Testimonials";
 
 export {
     Header,
@@ -15,5 +16,6 @@ export {
     ItemProject,
     ListProject,
     NavBar,
-    TitleSection
+    TitleSection,
+    Testimonials
 }
