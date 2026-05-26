@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex flex-col items-center gap-[32px] mt-[100px] mb-[50px]">
+    <div className="flex flex-col items-center gap-[32px] mt-[60px] md:mt-[100px] mb-[30px] md:mb-[50px]">
       <div className="flex items-center gap-[24px]">
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           <img src="/InstagramLogo.svg" alt="Instagram" width={37} />
